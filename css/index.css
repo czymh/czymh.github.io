@@ -304,7 +304,7 @@ blockquote p {
   display: block;
   margin: 0 1.6rem;
   padding: 0.8rem 0;
-  color: #7a8288;
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-in-out;
@@ -355,7 +355,7 @@ blockquote p {
   }
   .menus_items li a {
     display: block;
-    color: #7a8288;
+    color: #fff;
     font-size: 1.6rem;
     margin: 0px;
     padding: 8px 15px;
@@ -410,7 +410,7 @@ blockquote p {
     display: block;
     margin: 0 1.6rem;
     padding: 0.8rem 0;
-    color: #7a8288;
+    color: #fff;
     text-decoration: none;
   }
   .menus_items li a::before {
