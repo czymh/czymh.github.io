@@ -18,6 +18,7 @@ import os
 import sys
 import urllib.request
 import urllib.parse
+import urllib.error
 
 API = "https://api.adsabs.harvard.edu/v1"
 DEFAULT_LIB_ID = "HtElQUxPQDWHA8aZ5Pl3xg"
@@ -34,8 +35,20 @@ def _request(method, url, payload=None, token=None):
         headers["Content-Type"] = "application/json"
         body = json.dumps(payload).encode("utf-8")
     req = urllib.request.Request(url, data=body, headers=headers, method=method)
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as err:
+        detail = err.read().decode("utf-8", "replace")[:500]
+        hint = {
+            401: "ADS_API_TOKEN is invalid or revoked — regenerate at "
+                 "https://ui.adsabs.harvard.edu/user/settings/token",
+            403: "token cannot access the library — confirm the library belongs to "
+                 "the same ADS account that owns the token",
+            404: "library not found — check ADS_LIB_ID",
+            400: "bad request — check query/fields in the script",
+        }.get(err.code, "")
+        raise SystemExit(f"ADS API {err.code} {err.reason} on {method} {url}\n  {hint}\n  {detail}") from None
 
 
 def get_library_documents(lib_id, token):
