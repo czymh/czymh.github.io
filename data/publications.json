@@ -1,0 +1,71 @@
+{
+  "source": "ads",
+  "library": "HtElQUxPQDWHA8aZ5Pl3xg",
+  "updated": "2026-08-16",
+  "publications": [
+    {
+      "bibcode": "",
+      "title": "The first AKRA mass map reconstruction from HSC Y1 data",
+      "year": "2026",
+      "authors": ["Yuan Shi", "Pengjie Zhang", "Zhao Chen", "Jian Qin", "Li Cui", "Furen Deng", "Ji Yao"],
+      "venue": "Journal of Cosmology and Astroparticle Physics",
+      "doi": "10.1088/1475-7516/2026/02/085"
+    },
+    {
+      "bibcode": "",
+      "title": "Extending CSST Emulator to post-DESI era",
+      "year": "2026",
+      "authors": ["Zhao Chen", "Yu Yu"],
+      "venue": "Journal of Cosmology and Astroparticle Physics",
+      "doi": "10.1088/1475-7516/2026/06/086"
+    },
+    {
+      "bibcode": "",
+      "title": "ELUCID-DESI I: a parallel MPI implementation of the initial condition solver for large-scale reconstruction simulations",
+      "year": "2026",
+      "authors": ["Wensheng Hong", "Xiaohu Yang", "Junde Li", "Huiyuan Wang", "Zhao Chen", "Hong-Ming Zhu", "Qingyang Li", "Yizhou Gu", "Youcai Zhang", "Feng Shi", "Jiaxin Han", "Yu Yu", "Zhongxu Zhai"],
+      "venue": "Monthly Notices of the Royal Astronomical Society",
+      "doi": "10.1093/mnras/stag1211"
+    },
+    {
+      "bibcode": "",
+      "title": "CSST cosmological emulator II: Generalized accurate halo mass function emulation",
+      "year": "2025",
+      "authors": ["Zhao Chen", "Yu Yu"],
+      "venue": "Science China Physics, Mechanics & Astronomy",
+      "doi": "10.1007/s11433-025-2764-x"
+    },
+    {
+      "bibcode": "",
+      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10 h Mpc⁻¹",
+      "year": "2025",
+      "authors": ["Zhao Chen", "Yu Yu", "Jiaxin Han", "Yipeng Jing"],
+      "venue": "Science China Physics, Mechanics & Astronomy",
+      "doi": "10.1007/s11433-025-2671-0"
+    },
+    {
+      "bibcode": "",
+      "title": "Box replication effects in weak lensing light-cone construction",
+      "year": "2024",
+      "authors": ["Zhao Chen", "Yu Yu"],
+      "venue": "Monthly Notices of the Royal Astronomical Society",
+      "doi": "10.1093/mnras/stae2150"
+    },
+    {
+      "bibcode": "2022MNRAS.516.6210P",
+      "title": "Self-calibration of photometric redshift scatter from DECaLS DR8 power spectrum and validation with simulated catalogues",
+      "year": "2022",
+      "authors": ["Hui Peng", "Haojie Xu", "Le Zhang", "Zhao Chen", "Yu Yu"],
+      "venue": "Monthly Notices of the Royal Astronomical Society",
+      "doi": "10.1093/mnras/stac2713"
+    },
+    {
+      "bibcode": "",
+      "title": "Weak-lensing peak statistics in mocks by the inverse-Gaussianization method",
+      "year": "2020",
+      "authors": ["Zhao Chen", "Yu Yu", "Xiangkun Liu", "Zuhui Fan"],
+      "venue": "The Astrophysical Journal",
+      "doi": "10.3847/1538-4357/ab980f"
+    }
+  ]
+}

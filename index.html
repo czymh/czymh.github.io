@@ -1,3 +1,326 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>Zhao Chen's Universe</title><meta name="author" content="Zhao Chen"><link rel="shortcut icon" href="/img/favicon.png"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><meta name="generator" content="Hexo 7.2.0"></head><body><header id="page_header"><div class="header_wrap"><div id="blog_name"><a class="blog_title" id="site-name" href="/">Zhao Chen's Universe</a></div><button class="menus_icon"><div class="navicon"></div></button><ul class="menus_items"><li class="menus_item"><a class="site-page" href="/program"> Program</a></li><li class="menus_item"><a class="site-page" href="/#About"> About</a></li><li class="menus_item"><a class="site-page" href="/#Publications"> Publications</a></li></ul></div></header><main id="page_main"><div class="side-card sticky"><div class="card-wrap" itemscope itemtype="http://schema.org/Person"><div class="author-avatar"><img class="avatar-img" src="/img/myprofie.png" onerror="this.onerror=null;this.src='/img/myprofie.png'" alt="avatar"></div><div class="author-discrip"><h3>Zhao Chen</h3><p class="author-bio">This is Zhao Chen's (陈钊) personal page. </p></div><div class="author-links"><button class="btn m-social-links">Links</button><ul class="social-links"><li><a class="e-social-link" href="https://github.com/czymh/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><span>Github</span></a></li><li><a class="e-social-link" href="/chiyiru@sjtu.edu.cn" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i><span>Email</span></a></li><li><a class="e-social-link" href="https://orcid.org/0000-0002-2183-9863/" target="_blank"><i class="fab fa-orcid" aria-hidden="true"></i><span>ORCID</span></a></li></ul></div><a class="cv-links" href="/attaches/CV.pdf" target="_blank"><i class="fas fa-file-pdf" aria-hidden="true"><span>My Detail CV.</span></i></a></div></div><div class="page" itemscope itemtype="http://schema.org/CreativeWork"><article><h1 id="About"><a href="#About" class="headerlink" title="About"></a>About</h1><p>Zhao Chen（陈钊） is a Ph.D. student at the department of astronomy, Shanghai Jiao Tong University. I mainly focus on the large-scale structure and cosmology.</p>
-</article><article><h1 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h1><p>first</p>
-</article></div></main><div class="nav-wrap"><div class="nav"><button class="site-nav"><div class="navicon"></div></button><ul class="nav_items"><li class="nav_item"><a class="nav-page" href="/program"> Program</a></li><li class="nav_item"><a class="nav-page" href="/#About"> About</a></li><li class="nav_item"><a class="nav-page" href="/#Publications"> Publications</a></li></ul></div><div class="cd-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></div></div><footer id="page_footer"><div class="footer_wrap"><div class="copyright">&copy;2024 by Zhao Chen</div><div class="theme-info">Powered by <a target="_blank" href="https://hexo.io" rel="nofollow noopener">Hexo</a> & <a target="_blank" href="https://github.com/PhosphorW/hexo-theme-academia" rel="nofollow noopener">Academia Theme</a></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery-pjax@latest/jquery.pjax.min.js"></script><script src="/js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhao Chen — Cosmology &amp; Numerical Simulations</title>
+  <meta name="description" content="Zhao Chen (陈钊) is a Ph.D. student in the Department of Astronomy at Shanghai Jiao Tong University, working on large-scale structure, cosmology, and numerical simulations.">
+  <meta name="author" content="Zhao Chen">
+  <meta property="og:title" content="Zhao Chen — Cosmology &amp; Numerical Simulations">
+  <meta property="og:description" content="Ph.D. student at Shanghai Jiao Tong University. Large-scale structure, cosmology, numerical simulations, and cosmological emulators.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://czymh.github.io/">
+  <meta property="og:image" content="https://czymh.github.io/img/wholefield.png">
+  <meta name="theme-color" content="#0b0e10">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top">Zhao&nbsp;Chen</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#figures">Figures</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+        <a href="/attaches/CV.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="A cosmological simulation field"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Ph.D. student · Department of Astronomy · Shanghai Jiao Tong University</p>
+        <h1 class="hero-name">Zhao Chen <span class="hero-cn">陈钊</span></h1>
+        <p class="hero-tagline">coding to simulate the universe.</p>
+        <p class="hero-focus">Large-scale structure &amp; cosmology — numerical simulations, weak gravitational lensing, and emulator-based modeling of the universe.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/attaches/CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn btn-ghost" href="https://github.com/czymh" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://orcid.org/0000-0002-2183-9863" target="_blank" rel="noopener">ORCID</a>
+        </div>
+      </div>
+      <a class="hero-scroll" href="#about" aria-label="Scroll to About">
+        <span class="hero-scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media">
+            <img class="about-avatar" src="/img/myprofile.png" alt="Portrait of Zhao Chen" width="240" height="240">
+          </div>
+          <div class="about-body">
+            <h2 class="section-title">About</h2>
+            <p class="lead">
+              I am a Ph.D. student at the <strong>Department of Astronomy, Shanghai Jiao Tong University</strong>.
+              My research centers on <strong>large-scale structure</strong> and <strong>cosmology</strong>, with an emphasis on
+              cosmological N-body simulations, weak gravitational lensing, and emulator-based modeling of the universe.
+            </p>
+            <ul class="interest-list" aria-label="Research interests">
+              <li>Cosmological simulations</li>
+              <li>Large-scale structure</li>
+              <li>Weak gravitational lensing</li>
+              <li>Cosmological emulators</li>
+              <li>Power spectrum &amp; halo mass function</li>
+            </ul>
+            <h3 class="sub-title">Education</h3>
+            <ul class="edu-list">
+              <li>
+                <span class="edu-years">Ph.D. (in progress)</span>
+                <span class="edu-line">Department of Astronomy, Shanghai Jiao Tong University</span>
+              </li>
+              <li>
+                <span class="edu-years">B.S.</span>
+                <span class="edu-line">Shanghai Jiao Tong University</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Publications ============ -->
+    <section class="section section-alt" id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <p class="section-note">Synced from my <a href="https://ui.adsabs.harvard.edu/user/libraries/HtElQUxPQDWHA8aZ5Pl3xg" target="_blank" rel="noopener">NASA ADS library</a>, reverse chronological. DOI links open in a new tab.</p>
+        <ol class="pub-list" id="pub-list">
+          <li class="pub-item">
+            <span class="pub-year">2026</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1088/1475-7516/2026/02/085" target="_blank" rel="noopener">The first AKRA mass map reconstruction from HSC Y1 data</a></h3>
+              <p class="pub-venue">Yuan Shi, Pengjie Zhang, <strong>Zhao Chen</strong>, Jian Qin, Li Cui, et al. · Journal of Cosmology and Astroparticle Physics</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2026</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1088/1475-7516/2026/06/086" target="_blank" rel="noopener">Extending CSST Emulator to post-DESI era</a></h3>
+              <p class="pub-venue"><strong>Zhao Chen</strong>, Yu Yu · Journal of Cosmology and Astroparticle Physics</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2026</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1093/mnras/stag1211" target="_blank" rel="noopener">ELUCID-DESI I: a parallel MPI implementation of the initial condition solver for large-scale reconstruction simulations</a></h3>
+              <p class="pub-venue">Wensheng Hong, Xiaohu Yang, Junde Li, Huiyuan Wang, <strong>Zhao Chen</strong>, et al. · Monthly Notices of the Royal Astronomical Society</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2025</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1007/s11433-025-2764-x" target="_blank" rel="noopener">CSST cosmological emulator II: Generalized accurate halo mass function emulation</a></h3>
+              <p class="pub-venue"><strong>Zhao Chen</strong>, Yu Yu · Science China Physics, Mechanics &amp; Astronomy</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2025</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1007/s11433-025-2671-0" target="_blank" rel="noopener">CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10 h Mpc⁻¹</a></h3>
+              <p class="pub-venue"><strong>Zhao Chen</strong>, Yu Yu, Jiaxin Han, Yipeng Jing · Science China Physics, Mechanics &amp; Astronomy</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2024</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1093/mnras/stae2150" target="_blank" rel="noopener">Box replication effects in weak lensing light-cone construction</a></h3>
+              <p class="pub-venue"><strong>Zhao Chen</strong>, Yu Yu · Monthly Notices of the Royal Astronomical Society</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2022</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.1093/mnras/stac2713" target="_blank" rel="noopener">Self-calibration of photometric redshift scatter from DECaLS DR8 power spectrum and validation with simulated catalogues</a></h3>
+              <p class="pub-venue">Hui Peng, Haojie Xu, Le Zhang, <strong>Zhao Chen</strong>, Yu Yu · Monthly Notices of the Royal Astronomical Society</p>
+            </div>
+          </li>
+          <li class="pub-item">
+            <span class="pub-year">2020</span>
+            <div class="pub-main">
+              <h3 class="pub-title"><a href="https://doi.org/10.3847/1538-4357/ab980f" target="_blank" rel="noopener">Weak-lensing peak statistics in mocks by the inverse-Gaussianization method</a></h3>
+              <p class="pub-venue"><strong>Zhao Chen</strong>, Yu Yu, Xiangkun Liu, Zuhui Fan · The Astrophysical Journal</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects &amp; Software</h2>
+        <p class="section-note">Tools and simulation suites I develop and maintain.</p>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-head">
+              <h3 class="project-name">Kun Simulation</h3>
+              <span class="project-kind">Simulation suite</span>
+            </div>
+            <p class="project-desc">Public repository for the Kun simulation suite — 129 high-resolution N-body simulations (modified Gadget-4) spanning 129 cosmologies, built for the CSST Emulator.</p>
+            <div class="project-links">
+              <a href="https://kunsimulation.readthedocs.io" target="_blank" rel="noopener">Documentation</a>
+              <a href="https://github.com/czymh/KunSimulation" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3 class="project-name">CSST Emulator</h3>
+              <span class="project-kind">Python package</span>
+            </div>
+            <p class="project-desc">A user-friendly Python package for the CSST cosmological emulator — predicts matter power spectrum, halo mass function, and more, trained on the Kun suite.</p>
+            <div class="project-links">
+              <a href="https://csst-emulator.readthedocs.io" target="_blank" rel="noopener">Documentation</a>
+              <a href="https://github.com/czymh/csstemu" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3 class="project-name">pyFFTps</h3>
+              <span class="project-kind">Python package</span>
+            </div>
+            <p class="project-desc">Fast and user-friendly power-spectrum calculation Python package for N-body simulations.</p>
+            <div class="project-links">
+              <a href="https://github.com/czymh/pyFFTps" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3 class="project-name">csst-simulations-read</h3>
+              <span class="project-kind">Utilities</span>
+            </div>
+            <p class="project-desc">Scripts for reading snapshot, halo, subhalo, lightcone, and mesh data in cosmological simulations.</p>
+            <div class="project-links">
+              <a href="https://github.com/czymh/csst-simulations-read" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3 class="project-name">FastPM mocks</h3>
+              <span class="project-kind">Mock catalogs</span>
+            </div>
+            <p class="project-desc project-desc--placeholder">FastPM-based mock galaxy catalogs. <em>(Description to be completed.)</em></p>
+            <div class="project-links">
+              <a href="https://github.com/czymh" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Figures ============ -->
+    <section class="section section-alt" id="figures">
+      <div class="container">
+        <h2 class="section-title">Figures</h2>
+        <p class="section-note">Selected simulation figures. Click any image to enlarge. Replace placeholders with your own figures.</p>
+        <div class="figure-grid">
+          <figure class="figure-card">
+            <button class="figure-thumb" data-src="/img/wholefield.png" data-caption="A cosmological simulation field." aria-label="Enlarge figure">
+              <img src="/img/wholefield.png" alt="A cosmological simulation field" loading="lazy">
+            </button>
+            <figcaption class="figure-caption">A cosmological simulation field.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
+              <span>Replace with a simulation figure</span>
+            </div>
+            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
+              <span>Replace with a simulation figure</span>
+            </div>
+            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
+              <span>Replace with a simulation figure</span>
+            </div>
+            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
+              <span>Replace with a simulation figure</span>
+            </div>
+            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
+              <span>Replace with a simulation figure</span>
+            </div>
+            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Teaching / Other ============ -->
+    <section class="section" id="teaching">
+      <div class="container">
+        <h2 class="section-title">Teaching &amp; Other</h2>
+        <p class="section-note section-note--placeholder">Teaching, talks, and other activities. <em>(Content to be added.)</em></p>
+        <ul class="teaching-list">
+          <li class="teaching-item">
+            <span class="teaching-kind">Placeholder</span>
+            <span class="teaching-line">Add teaching, talks, or service items here.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="lead">Feel free to reach out about collaborations or questions.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:chiyiru@sjtu.edu.cn">chiyiru@sjtu.edu.cn</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/czymh" target="_blank" rel="noopener">github.com/czymh</a>
+          </li>
+          <li>
+            <span class="contact-label">ORCID</span>
+            <a href="https://orcid.org/0000-0002-2183-9863" target="_blank" rel="noopener">0000-0002-2183-9863</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2024 Zhao Chen</span>
+      <span>Built by hand · <a href="https://github.com/czymh" target="_blank" rel="noopener">github.com/czymh</a></span>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Enlarged figure">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img class="lightbox-img" src="" alt="">
+    <p class="lightbox-caption"></p>
+  </div>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

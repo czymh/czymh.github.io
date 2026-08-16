@@ -1,0 +1,39 @@
+name: Sync publications from ADS
+
+on:
+  schedule:
+    # Weekly, Monday 04:23 UTC (off the :00/:30 marks)
+    - cron: '23 4 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sync publications from ADS
+        env:
+          ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
+        run: python .github/scripts/sync_publications.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet data/publications.json; then
+            echo "data/publications.json unchanged"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/publications.json
+            git commit -m "Sync publications from ADS library"
+            git push
+          fi
