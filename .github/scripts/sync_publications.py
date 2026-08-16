@@ -52,10 +52,22 @@ def _request(method, url, payload=None, token=None):
 
 
 def get_library_documents(lib_id, token):
-    """Return the list of bibcodes in the library."""
-    data = _request("GET", f"{API}/library/{urllib.parse.quote(lib_id)}", token=token)
-    docs = data.get("documents") or []
-    print(f"[ads] library '{data.get('name', lib_id)}': {data.get('num_documents', len(docs))} papers")
+    """Return the list of bibcodes in the library (paginated; the endpoint
+    defaults to only 20 rows, so we page through by `num_documents`)."""
+    docs, start, rows, total = [], 0, 200, None
+    while True:
+        url = (f"{API}/biblib/libraries/{urllib.parse.quote(lib_id)}"
+               f"?start={start}&rows={rows}&fl=bibcode&sort=date%20desc")
+        data = _request("GET", url, token=token)
+        metadata = data.get("metadata") or {}
+        if total is None:
+            total = metadata.get("num_documents", 0)
+            print(f"[ads] library '{metadata.get('name', lib_id)}': {total} papers")
+        batch = data.get("documents") or []
+        docs.extend(batch)
+        start += rows
+        if not batch or start >= total or len(batch) < rows:
+            break
     return docs
 
 
