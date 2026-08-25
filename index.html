@@ -1,13 +1,31 @@
+<head>
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],   // 启用 \( ... \) 行内公式
+      displayMath: [['\\[','\\]']],
+      processEscapes: true
+    },
+    startup: {
+      pageReady: function () {
+        return MathJax.startup.defaultPageReady();
+      }
+    }
+  };
+  </script>
+  <!-- MathJax必须放在head，不要放到body底部 -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </head>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zhao Chen — Cosmology &amp; Numerical Simulations</title>
-  <meta name="description" content="Zhao Chen (陈钊) is a Ph.D. student in the Department of Astronomy at Shanghai Jiao Tong University, working on large-scale structure, cosmology, and numerical simulations.">
+  <meta name="description" content="Zhao Chen (陈钊) is a postdoctoral researcher in the Department of Astronomy at Shanghai Jiao Tong University, working on large-scale structure, cosmology, and numerical simulations.">
   <meta name="author" content="Zhao Chen">
   <meta property="og:title" content="Zhao Chen — Cosmology &amp; Numerical Simulations">
-  <meta property="og:description" content="Ph.D. student at Shanghai Jiao Tong University. Large-scale structure, cosmology, numerical simulations, and cosmological emulators.">
+  <meta property="og:description" content="Postdoctoral researcher at Shanghai Jiao Tong University. Large-scale structure, cosmology, numerical simulations, and cosmological emulators.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://czymh.github.io/">
   <meta property="og:image" content="https://czymh.github.io/img/wholefield.png">
@@ -32,9 +50,9 @@
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
         <a href="#figures">Figures</a>
-        <a href="#teaching">Teaching</a>
+        <!-- <a href="#teaching">Teaching</a> -->
         <a href="#contact">Contact</a>
-        <a href="/attaches/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <!-- <a href="/attaches/CV.pdf" target="_blank" rel="noopener">CV</a> -->
       </nav>
     </div>
   </header>
@@ -45,7 +63,7 @@
       <div class="hero-bg" role="img" aria-label="A cosmological simulation field"></div>
       <div class="hero-overlay"></div>
       <div class="hero-inner">
-        <p class="hero-eyebrow">Ph.D. student · Department of Astronomy · Shanghai Jiao Tong University</p>
+        <p class="hero-eyebrow">PostDoc · Department of Astronomy · Shanghai Jiao Tong University</p>
         <h1 class="hero-name">Zhao Chen <span class="hero-cn">陈钊</span></h1>
         <p class="hero-tagline">coding to simulate the universe.</p>
         <p class="hero-focus">Large-scale structure &amp; cosmology — numerical simulations, weak gravitational lensing, and emulator-based modeling of the universe.</p>
@@ -70,7 +88,7 @@
           <div class="about-body">
             <h2 class="section-title">About</h2>
             <p class="lead">
-              I am a Ph.D. student at the <strong>Department of Astronomy, Shanghai Jiao Tong University</strong>.
+              I am a postdoctoral researcher at the <strong>Department of Astronomy, Shanghai Jiao Tong University</strong>.
               My research centers on <strong>large-scale structure</strong> and <strong>cosmology</strong>, with an emphasis on
               cosmological N-body simulations, weak gravitational lensing, and emulator-based modeling of the universe.
             </p>
@@ -84,12 +102,16 @@
             <h3 class="sub-title">Education</h3>
             <ul class="edu-list">
               <li>
-                <span class="edu-years">Ph.D. (in progress)</span>
-                <span class="edu-line">Department of Astronomy, Shanghai Jiao Tong University</span>
+                <span class="edu-years">2025.12 – now</span>
+                <span class="edu-line">Postdoctoral researcher, Department of Astronomy, Shanghai Jiao Tong University</span>
               </li>
               <li>
-                <span class="edu-years">B.S.</span>
-                <span class="edu-line">Shanghai Jiao Tong University</span>
+                <span class="edu-years">2020.09 – 2025.11</span>
+                <span class="edu-line">Ph.D., Department of Astronomy, Shanghai Jiao Tong University</span>
+              </li>
+              <li>
+                <span class="edu-years">2016.09 – 2020.06</span>
+                <span class="edu-line">B.S., School of Physics and Astronomy, Shanghai Jiao Tong University</span>
               </li>
             </ul>
           </div>
@@ -188,6 +210,7 @@
             <p class="project-desc">A user-friendly Python package for the CSST cosmological emulator — predicts matter power spectrum, halo mass function, and more, trained on the Kun suite.</p>
             <div class="project-links">
               <a href="https://csst-emulator.readthedocs.io" target="_blank" rel="noopener">Documentation</a>
+              <a href="https://csst-emulator.sjtu.edu.cn/" target="_blank" rel="noopener">Online calculator</a>
               <a href="https://github.com/czymh/csstemu" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
@@ -206,19 +229,29 @@
               <h3 class="project-name">csst-simulations-read</h3>
               <span class="project-kind">Utilities</span>
             </div>
-            <p class="project-desc">Scripts for reading snapshot, halo, subhalo, lightcone, and mesh data in cosmological simulations.</p>
+            <p class="project-desc">Scripts for reading snapshot, halo, subhalo, lightcone, and mesh data in Kun cosmological simulations.</p>
             <div class="project-links">
               <a href="https://github.com/czymh/csst-simulations-read" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
           <article class="project-card">
             <div class="project-head">
-              <h3 class="project-name">FastPM mocks</h3>
-              <span class="project-kind">Mock catalogs</span>
+              <h3 class="project-name">losf</h3>
+              <span class="project-kind">Python package</span>
             </div>
-            <p class="project-desc project-desc--placeholder">FastPM-based mock galaxy catalogs. <em>(Description to be completed.)</em></p>
+            <p class="project-desc">Line-of-Sight Finder (losf) for continuous light-cone construction with minimal repeated structures.</p>
             <div class="project-links">
-              <a href="https://github.com/czymh" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://github.com/czymh/losf" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-head">
+              <h3 class="project-name">inverse-Gaussianization method</h3>
+              <span class="project-kind">Python package</span>
+            </div>
+            <p class="project-desc">Code of the inverse-Gaussianization method to generate mocks of weak-lensing convergence.</p>
+            <div class="project-links">
+              <a href="https://github.com/czymh/inverse-Gaussianization_method" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
         </div>
@@ -229,31 +262,31 @@
     <section class="section section-alt" id="figures">
       <div class="container">
         <h2 class="section-title">Figures</h2>
-        <p class="section-note">Selected simulation figures. Click any image to enlarge. Replace placeholders with your own figures.</p>
+        <p class="section-note">Beautiful simulation figures. Click any image to enlarge.</p>
         <div class="figure-grid">
           <figure class="figure-card">
-            <button class="figure-thumb" data-src="/img/wholefield.png" data-caption="A cosmological simulation field." aria-label="Enlarge figure">
+            <button class="figure-arr1" data-src="/img/field200Mpc_over_h.png" data-caption="field200Mpc_over_h.png" aria-label="Enlarge figure">
+              <img src="/img/field200Mpc_over_h.png" alt="field200Mpc_over_h.png" loading="lazy">
+            </button>
+            <figcaption class="figure-caption">Cosmological simulation fields for different cosmological models with a periodic box of side length \(200\,h^{-1}\,{\rm Mpc}\).</figcaption>
+          </figure>
+          <figure class="figure-card">
+            <button class="figure-arr2" data-src="/img/field50Mpc_over_h.png" data-caption="field50Mpc_over_h.png" aria-label="Enlarge figure">
+              <img src="/img/field50Mpc_over_h.png" alt="field50Mpc_over_h.png" loading="lazy">
+            </button>
+            <figcaption class="figure-caption">Cosmological simulation fields for different cosmological models with a periodic box of side length \(50\,h^{-1}\,{\rm Mpc}\).</figcaption> 
+          </figure>
+          <figure class="figure-card">
+            <button class="figure-arr3" data-src="/img/halo_arrayplots.png" data-caption="halo_arrayplots.png" aria-label="Enlarge figure">
+              <img src="/img/halo_arrayplots.png" alt="halo_arrayplots.png" loading="lazy">
+            </button>
+            <figcaption class="figure-caption">Cosmological simulation fields for different cosmological models around the most massive halo.</figcaption> 
+          </figure>
+          <figure class="figure-card">
+            <button class="figure-wholefield" data-src="/img/wholefield.png" data-caption="A cosmological simulation field." aria-label="Enlarge figure">
               <img src="/img/wholefield.png" alt="A cosmological simulation field" loading="lazy">
             </button>
-            <figcaption class="figure-caption">A cosmological simulation field.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
-              <span>Replace with a simulation figure</span>
-            </div>
-            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
-              <span>Replace with a simulation figure</span>
-            </div>
-            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
-          </figure>
-          <figure class="figure-card">
-            <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
-              <span>Replace with a simulation figure</span>
-            </div>
-            <figcaption class="figure-caption">Figure caption — replace.</figcaption>
+            <figcaption class="figure-caption">A cosmological simulation field with a periodic box of side length \(1\,h^{-1}\,{\rm Gpc}\).</figcaption>
           </figure>
           <figure class="figure-card">
             <div class="figure-thumb figure-thumb--placeholder" aria-label="Placeholder">
@@ -272,7 +305,7 @@
     </section>
 
     <!-- ============ Teaching / Other ============ -->
-    <section class="section" id="teaching">
+    <!-- <section class="section" id="teaching">
       <div class="container">
         <h2 class="section-title">Teaching &amp; Other</h2>
         <p class="section-note section-note--placeholder">Teaching, talks, and other activities. <em>(Content to be added.)</em></p>
@@ -283,7 +316,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- ============ Contact ============ -->
     <section class="section section-alt" id="contact">

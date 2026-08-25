@@ -348,6 +348,7 @@ em { font-style: italic; }
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--text-faint);
+  white-space: nowrap;
 }
 .edu-line { color: var(--text-muted); }
 
@@ -621,7 +622,9 @@ em { font-style: italic; }
 
   .about-grid { grid-template-columns: 1fr; }
   .about-avatar { width: 140px; height: 140px; }
-  .edu-years, .teaching-kind { flex-basis: 96px; }
+  .edu-list li { flex-direction: column; gap: 4px; }
+  .edu-years { flex-basis: auto; }
+  .teaching-kind { flex-basis: 96px; }
   .contact-label { flex-basis: 72px; }
   .hero { min-height: 84vh; }
 }

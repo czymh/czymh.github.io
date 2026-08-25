@@ -53,5 +53,4 @@ Content (name, affiliation, 8 publications, projects) drafted from public source
 
 - Provide real simulation figures for the gallery + project thumbnails (currently placeholders)
 - Confirm email (chiyiru@sjtu.edu.cn) and exact CSST green
-- Add author lists to publications (currently omitted)
-- Replace placeholder CV.pdf and FastPM-mocks description
+- Replace placeholder CV.pdf
