@@ -22,7 +22,7 @@ import urllib.error
 
 API = "https://api.adsabs.harvard.edu/v1"
 DEFAULT_LIB_ID = "HtElQUxPQDWHA8aZ5Pl3xg"
-FIELDS = ["bibcode", "title", "author", "year", "pubdate", "container-title", "doi"]
+FIELDS = ["bibcode", "title", "author", "year", "pubdate", "pub", "doi"]
 ROWS = 200
 
 
@@ -72,14 +72,23 @@ def get_library_documents(lib_id, token):
 
 
 def search_docs(bibcodes, token):
-    """Resolve structured metadata for the given bibcodes (reverse chronological)."""
+    """Resolve structured metadata for the given bibcodes (reverse chronological).
+
+    Uses the search endpoint via GET (the endpoint does not accept POST).
+    """
     if not bibcodes:
         return []
-    query = " OR ".join(f'identifier:"{b}"' for b in bibcodes)
+    query = " OR ".join(f'bibcode:"{b}"' for b in bibcodes)
     docs, start = [], 0
     while True:
-        payload = {"q": query, "fl": FIELDS, "rows": ROWS, "start": start, "sort": "pubdate desc"}
-        data = _request("POST", f"{API}/search/query", payload=payload, token=token)
+        qs = urllib.parse.urlencode({
+            "q": query,
+            "fl": ",".join(FIELDS),
+            "rows": ROWS,
+            "start": start,
+            "sort": "pubdate desc",
+        }, safe=",")
+        data = _request("GET", f"{API}/search/query?{qs}", token=token)
         found = data.get("response", {}).get("docs", [])
         docs.extend(found)
         num_found = data.get("response", {}).get("numFound", 0)
@@ -106,7 +115,7 @@ def first_str(value):
 
 def build_publication(doc):
     authors = [display_name(a) for a in (doc.get("author") or [])]
-    venue = first_str(doc.get("container-title"))
+    venue = first_str(doc.get("pub"))
     return {
         "bibcode": doc.get("bibcode") or "",
         "title": first_str(doc.get("title")),
