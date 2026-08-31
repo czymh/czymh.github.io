@@ -1,69 +1,127 @@
 {
   "source": "ads",
   "library": "HtElQUxPQDWHA8aZ5Pl3xg",
-  "updated": "2026-08-16",
+  "updated": "2026-08-31",
   "publications": [
     {
-      "bibcode": "",
-      "title": "The first AKRA mass map reconstruction from HSC Y1 data",
-      "year": "2026",
-      "authors": ["Yuan Shi", "Pengjie Zhang", "Zhao Chen", "Jian Qin", "Li Cui", "Furen Deng", "Ji Yao"],
-      "venue": "Journal of Cosmology and Astroparticle Physics",
-      "doi": "10.1088/1475-7516/2026/02/085"
-    },
-    {
-      "bibcode": "",
+      "bibcode": "2026JCAP...06..086C",
       "title": "Extending CSST Emulator to post-DESI era",
       "year": "2026",
-      "authors": ["Zhao Chen", "Yu Yu"],
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu"
+      ],
       "venue": "Journal of Cosmology and Astroparticle Physics",
       "doi": "10.1088/1475-7516/2026/06/086"
     },
     {
-      "bibcode": "",
-      "title": "ELUCID-DESI I: a parallel MPI implementation of the initial condition solver for large-scale reconstruction simulations",
+      "bibcode": "2026JCAP...02..085S",
+      "title": "The first AKRA mass map reconstruction from HSC Y1 data",
       "year": "2026",
-      "authors": ["Wensheng Hong", "Xiaohu Yang", "Junde Li", "Huiyuan Wang", "Zhao Chen", "Hong-Ming Zhu", "Qingyang Li", "Yizhou Gu", "Youcai Zhang", "Feng Shi", "Jiaxin Han", "Yu Yu", "Zhongxu Zhai"],
-      "venue": "Monthly Notices of the Royal Astronomical Society",
-      "doi": "10.1093/mnras/stag1211"
+      "authors": [
+        "Yuan Shi",
+        "Pengjie Zhang",
+        "Zhao Chen",
+        "Jian Qin",
+        "Li Cui",
+        "Furen Deng",
+        "Ji Yao"
+      ],
+      "venue": "Journal of Cosmology and Astroparticle Physics",
+      "doi": "10.1088/1475-7516/2026/02/085"
     },
     {
-      "bibcode": "",
-      "title": "CSST cosmological emulator II: Generalized accurate halo mass function emulation",
+      "bibcode": "2025SCPMA..6829512Z",
+      "title": "CSST cosmological emulator III: Hybrid lagrangian bias expansion emulation of galaxy clustering",
       "year": "2025",
-      "authors": ["Zhao Chen", "Yu Yu"],
-      "venue": "Science China Physics, Mechanics & Astronomy",
-      "doi": "10.1007/s11433-025-2764-x"
+      "authors": [
+        "Shuren Zhou",
+        "Zhao Chen",
+        "Yu Yu"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
+      "doi": "10.1007/s11433-025-2755-x"
     },
     {
-      "bibcode": "",
-      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10 h Mpc⁻¹",
+      "bibcode": "2025SCPMA..6889512C",
+      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10h Mpc<SUP>−1</SUP>",
       "year": "2025",
-      "authors": ["Zhao Chen", "Yu Yu", "Jiaxin Han", "Yipeng Jing"],
-      "venue": "Science China Physics, Mechanics & Astronomy",
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu",
+        "Jiaxin Han",
+        "Yipeng Jing"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
       "doi": "10.1007/s11433-025-2671-0"
     },
     {
-      "bibcode": "",
+      "bibcode": "2025SCPMA..6809511H",
+      "title": "The Jiutian simulations for the CSST extra-galactic surveys",
+      "year": "2025",
+      "authors": [
+        "Jiaxin Han",
+        "Ming Li",
+        "Wenkang Jiang",
+        "Zhao Chen",
+        "Huiyuan Wang",
+        "Chengliang Wei",
+        "Feihong He",
+        "Jianhua He",
+        "Jiajun Zhang",
+        "Yu Liu",
+        "Weiguang Cui",
+        "Yizhou Gu",
+        "Qi Guo",
+        "Yipeng Jing",
+        "Xi Kang",
+        "Guoliang Li",
+        "Xiong Luo",
+        "Yu Luo",
+        "Wenxiang Pei",
+        "Yisheng Qiu",
+        "Zhenlin Tan",
+        "Lizhi Xie",
+        "Xiaohu Yang",
+        "Haoran Yu",
+        "Yu Yu",
+        "Jiale Zhou"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
+      "doi": "10.1007/s11433-025-2712-1"
+    },
+    {
+      "bibcode": "2025SCPMA..6809513C",
+      "title": "CSST cosmological emulator II: Generalized accurate halo mass function emulation",
+      "year": "2025",
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
+      "doi": "10.1007/s11433-025-2764-x"
+    },
+    {
+      "bibcode": "2024MNRAS.534.1205C",
       "title": "Box replication effects in weak lensing light-cone construction",
       "year": "2024",
-      "authors": ["Zhao Chen", "Yu Yu"],
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu"
+      ],
       "venue": "Monthly Notices of the Royal Astronomical Society",
       "doi": "10.1093/mnras/stae2150"
     },
     {
-      "bibcode": "2022MNRAS.516.6210P",
-      "title": "Self-calibration of photometric redshift scatter from DECaLS DR8 power spectrum and validation with simulated catalogues",
-      "year": "2022",
-      "authors": ["Hui Peng", "Haojie Xu", "Le Zhang", "Zhao Chen", "Yu Yu"],
-      "venue": "Monthly Notices of the Royal Astronomical Society",
-      "doi": "10.1093/mnras/stac2713"
-    },
-    {
-      "bibcode": "",
-      "title": "Weak-lensing peak statistics in mocks by the inverse-Gaussianization method",
+      "bibcode": "2020ApJ...897...14C",
+      "title": "Weak-lensing Peak Statistics in Mocks by the Inverse-Gaussianization Method",
       "year": "2020",
-      "authors": ["Zhao Chen", "Yu Yu", "Xiangkun Liu", "Zuhui Fan"],
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu",
+        "Xiangkun Liu",
+        "Zuhui Fan"
+      ],
       "venue": "The Astrophysical Journal",
       "doi": "10.3847/1538-4357/ab980f"
     }
