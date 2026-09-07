@@ -1,8 +1,47 @@
 {
   "source": "ads",
   "library": "HtElQUxPQDWHA8aZ5Pl3xg",
-  "updated": "2026-08-31",
+  "updated": "2026-09-07",
   "publications": [
+    {
+      "bibcode": "2026MNRAS.550g1211H",
+      "title": "ELUCID-DESI I: a parallel MPI implementation of the initial condition solver for large-scale reconstruction simulations",
+      "year": "2026",
+      "authors": [
+        "Wensheng Hong",
+        "Xiaohu Yang",
+        "Junde Li",
+        "Huiyuan Wang",
+        "Zhao Chen",
+        "Hong-Ming Zhu",
+        "Qingyang Li",
+        "Yizhou Gu",
+        "Youcai Zhang",
+        "Feng Shi",
+        "Jiaxin Han",
+        "Yu Yu",
+        "Zhongxu Zhai"
+      ],
+      "venue": "Monthly Notices of the Royal Astronomical Society",
+      "doi": "10.1093/mnras/stag1211"
+    },
+    {
+      "bibcode": "2026RAA....26g5003H",
+      "title": "MIU<SUP>2</SUP>Net: Weak-lensing Mass Inversion Using Deep Learning with Nested U-structures",
+      "year": "2026",
+      "authors": [
+        "W. G. Han",
+        "An Zhao",
+        "Xinyue Chen",
+        "Ran Li",
+        "Rui Li",
+        "Xiangkun Liu",
+        "Zhao Chen",
+        "Yu Yu"
+      ],
+      "venue": "Research in Astronomy and Astrophysics",
+      "doi": "10.1088/1674-4527/ae4d1e"
+    },
     {
       "bibcode": "2026JCAP...06..086C",
       "title": "Extending CSST Emulator to post-DESI era",
@@ -13,6 +52,21 @@
       ],
       "venue": "Journal of Cosmology and Astroparticle Physics",
       "doi": "10.1088/1475-7516/2026/06/086"
+    },
+    {
+      "bibcode": "2026arXiv260523367X",
+      "title": "Cosmological constraints from neighbor-density-weighted marked correlation functions",
+      "year": "2026",
+      "authors": [
+        "Xu Xiao",
+        "Zhao Chen",
+        "Yu Yu",
+        "Xiao-Dong Li",
+        "Yiqi Huang",
+        "Le Zhang"
+      ],
+      "venue": "arXiv e-prints",
+      "doi": "10.48550/arXiv.2605.23367"
     },
     {
       "bibcode": "2026JCAP...02..085S",
@@ -41,19 +95,6 @@
       ],
       "venue": "Science China Physics, Mechanics, and Astronomy",
       "doi": "10.1007/s11433-025-2755-x"
-    },
-    {
-      "bibcode": "2025SCPMA..6889512C",
-      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10h Mpc<SUP>−1</SUP>",
-      "year": "2025",
-      "authors": [
-        "Zhao Chen",
-        "Yu Yu",
-        "Jiaxin Han",
-        "Yipeng Jing"
-      ],
-      "venue": "Science China Physics, Mechanics, and Astronomy",
-      "doi": "10.1007/s11433-025-2671-0"
     },
     {
       "bibcode": "2025SCPMA..6809511H",
@@ -100,6 +141,19 @@
       ],
       "venue": "Science China Physics, Mechanics, and Astronomy",
       "doi": "10.1007/s11433-025-2764-x"
+    },
+    {
+      "bibcode": "2025SCPMA..6889512C",
+      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10h Mpc<SUP>−1</SUP>",
+      "year": "2025",
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu",
+        "Jiaxin Han",
+        "Yipeng Jing"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
+      "doi": "10.1007/s11433-025-2671-0"
     },
     {
       "bibcode": "2024MNRAS.534.1205C",
