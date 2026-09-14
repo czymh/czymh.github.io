@@ -1,7 +1,7 @@
 {
   "source": "ads",
   "library": "HtElQUxPQDWHA8aZ5Pl3xg",
-  "updated": "2026-09-07",
+  "updated": "2026-09-14",
   "publications": [
     {
       "bibcode": "2026MNRAS.550g1211H",
@@ -97,6 +97,30 @@
       "doi": "10.1007/s11433-025-2755-x"
     },
     {
+      "bibcode": "2025SCPMA..6889512C",
+      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10h Mpc<SUP>−1</SUP>",
+      "year": "2025",
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu",
+        "Jiaxin Han",
+        "Yipeng Jing"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
+      "doi": "10.1007/s11433-025-2671-0"
+    },
+    {
+      "bibcode": "2025SCPMA..6809513C",
+      "title": "CSST cosmological emulator II: Generalized accurate halo mass function emulation",
+      "year": "2025",
+      "authors": [
+        "Zhao Chen",
+        "Yu Yu"
+      ],
+      "venue": "Science China Physics, Mechanics, and Astronomy",
+      "doi": "10.1007/s11433-025-2764-x"
+    },
+    {
       "bibcode": "2025SCPMA..6809511H",
       "title": "The Jiutian simulations for the CSST extra-galactic surveys",
       "year": "2025",
@@ -130,30 +154,6 @@
       ],
       "venue": "Science China Physics, Mechanics, and Astronomy",
       "doi": "10.1007/s11433-025-2712-1"
-    },
-    {
-      "bibcode": "2025SCPMA..6809513C",
-      "title": "CSST cosmological emulator II: Generalized accurate halo mass function emulation",
-      "year": "2025",
-      "authors": [
-        "Zhao Chen",
-        "Yu Yu"
-      ],
-      "venue": "Science China Physics, Mechanics, and Astronomy",
-      "doi": "10.1007/s11433-025-2764-x"
-    },
-    {
-      "bibcode": "2025SCPMA..6889512C",
-      "title": "CSST cosmological emulator I: Matter power spectrum emulation with one percent accuracy to k = 10h Mpc<SUP>−1</SUP>",
-      "year": "2025",
-      "authors": [
-        "Zhao Chen",
-        "Yu Yu",
-        "Jiaxin Han",
-        "Yipeng Jing"
-      ],
-      "venue": "Science China Physics, Mechanics, and Astronomy",
-      "doi": "10.1007/s11433-025-2671-0"
     },
     {
       "bibcode": "2024MNRAS.534.1205C",
